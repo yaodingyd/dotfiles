@@ -1,0 +1,19 @@
+{
+  "editor.tabSize": 2,
+  "javascript.validate.enable": false,
+  "standard.enable": true,
+  "standard.options": {
+      "globals": ["$", "jQuery", "fetch"],
+      "ignore": [
+          "node_modules/**"
+      ],
+      "parser": "babel-eslint"
+  },
+  "workbench.iconTheme": "file-icons",
+  "files.associations": {
+    "*.ejs": "html"
+  },
+  "editor.snippetSuggestions": "top",
+  "window.openFilesInNewWindow": "off",
+  "editor.wordWrap
+}
