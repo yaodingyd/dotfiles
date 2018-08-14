@@ -1,0 +1,42 @@
+[user]
+    name = Yao Ding
+    email = yaodingyd@gmail.com
+
+[alias]
+    prune = fetch --prune
+    undo = reset --soft HEAD^
+    stash-all = stash save --include-untracked
+    glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+
+[merge]
+    conflictstyle = diff3
+    ff = only
+
+[push]
+    default = simple
+
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[gitflow "branch"]
+    master = master
+    develop = work
+[gitflow "prefix"]
+    feature = feature/
+    release = release/
+    hotfix = hotfix/
