@@ -1,18 +1,13 @@
-export JAVA_HOME=$(/usr/libexec/java_home)
-export M2_HOME=/usr/local/apache-maven-3.3.9
-
-
-export PATH=/usr/local/php5/bin:$PATH
-export PATH=$M2_HOME/bin:$PATH
-export PATH=$HOME/.composer/vendor/bin:$PATH
 export PATH="/usr/local/sbin:$PATH"
 
+# Enable CLI color and change it
 export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
+# Change promt color
 function parse_git_branch {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
-
 
 function prompt {
     local BLACK="\[\033[0;30m\]"
